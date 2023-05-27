@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  dotnet-aspnet-asterisk:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.txt
+    image: maskawanian/dotnet-aspnet-asterisk:7.0

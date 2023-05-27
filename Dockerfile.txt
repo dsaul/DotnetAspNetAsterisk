@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+
+RUN apt-get update && apt-get install -y \
+	bash \
+	curl \
+	cron \
+	sudo \
+	asterisk \
+	htop \
+	sngrep \
+	dos2unix \
+	iproute2 \
+	inetutils-ping \
+	nano \
+	wget \
+	openssh-server \
+	&& rm -rf /var/lib/apt/lists/*
